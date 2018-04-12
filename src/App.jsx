@@ -1,21 +1,10 @@
-// import { hot } from 'react-hot-loader';
-import { Component } from 'react';
 import Main from './Main';
 import './App.css';
 
-class App extends Component {
-  state = {
-    name: 'redoak',
-  };
+export default () => (
+  <div className="App">
+    <h1>Redash UI Prototype</h1>
+    <Main />
+  </div>
+);
 
-  render() {
-    return (
-      <div className="App">
-        <h1>Welcome to {this.state.name}</h1>
-        <Main />
-      </div>
-    );
-  }
-}
-
-export default App;
